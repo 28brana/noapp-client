@@ -1,23 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import UploadCSV from "./component/UploadCSV";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container flex [background:#F1F3F7] justify-center  h-screen ">
+      <div className="[width:600px] mt-10">
+        <UploadCSV />
+      </div>
     </div>
   );
 }
